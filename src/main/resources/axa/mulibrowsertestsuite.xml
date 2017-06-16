@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AXAServiceTest" parallel="tests">
+    <test name="FireFox-Desktop">
+        <parameter name="browserType" value="firefox"/>
+        <classes>
+            <class name="com.axa.webpage.testcase.AXAServiceLinkDesktopBrowserTest"/>
+        </classes>
+    </test>
+
+    <test name="Chrome-Desktop">
+        <parameter name="browserType" value="chrome"/>
+        <classes>
+            <class name="com.axa.webpage.testcase.AXAServiceLinkDesktopBrowserTest"/>
+        </classes>
+    </test>
+
+    <test name="safari-IOS">
+        <parameter name="browserType" value="ios"/>
+        <classes>
+            <class name="com.axa.webpage.testcase.AXAServiceLinkMobileBrowserTest"/>
+        </classes>
+    </test>
+
+</suite>
